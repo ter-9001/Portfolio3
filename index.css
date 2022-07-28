@@ -8,11 +8,33 @@
 
 /**/
 
+
+
 body
 {
     background-color: var(--firtdark);
     font-family: 'Poppins', sans-serif;
     color: aliceblue;
+}
+
+
+#apresentation
+{
+    transition: 1.5s;
+    transform: scale(0.8);
+}
+
+
+
+ion-icon
+{
+    color: var(--redtextcolor);
+    
+}
+
+ion-icon:hover
+{
+    color: var(--purcolor);
 }
 
 #all
@@ -39,6 +61,11 @@ body
     
     
 }
+
+
+
+
+
 
 
 #apresentation nav
@@ -79,7 +106,6 @@ body
 
     justify-content: space-between;
     list-style: none;
-    color: var(--redtextcolor);
     font-size: 28px;
 
 }
@@ -89,6 +115,7 @@ body
 {
     margin: 10px;
 }
+
 
 .row
 {
@@ -102,7 +129,7 @@ body
     flex-direction: column; 
 }
 
-#coreapresetation
+#coreapresentation
 {
     display: flex;
     flex-direction: row-reverse;
@@ -112,7 +139,7 @@ body
 }
 
 
-#coreapresetation svg
+#coreapresentation svg
 {
    z-index: 2000;
    fill: var(--redtextcolor);
@@ -127,7 +154,7 @@ body
 }
 
 
-#coreapresetation div
+#coreapresentation div
 {
     display: flex;
     flex-direction: column; 
@@ -135,14 +162,14 @@ body
     margin: 0 0 0 50px;
 }
 
-#coreapresetation div p
+#coreapresentation div p
 {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 
-#coreapresetation div span
+#coreapresentation div span
 {
     margin-top: -10px;
     font-weight: 600;
@@ -150,10 +177,95 @@ body
 }
 
 
-#coreapresetation div h
+#coreapresentation div h
 {
     text-align: justify;
     margin: 0;
 }
 
+p, span
+{
+    font-size: 17px;
+}
 
+h1
+{
+    font-size: 23px;
+}
+
+ion-icon[name="arrow-dropup-circle"]
+{
+    font-size: 40px;
+    z-index: 2000;
+    position: fixed;
+    top: 90%; right: 10%;
+}
+
+
+
+
+@media only screen and (max-width: 600px)
+{
+
+p, span
+{
+    font-size: 13px;
+}
+
+h1
+{
+    font-size: 20px;
+}
+    
+#apresentation
+{
+transition: 1.5s;
+transform: scale(1);
+}
+
+    p, h1, span, ion-icon, svg, a
+    {
+        transition: 2s;
+        visibility: visible;
+    }
+
+
+    
+    #apresentation
+    {
+        top:0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    #coreapresentation
+    {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    
+        #apresentation nav
+        {
+            justify-content: center;
+        }
+
+        #coreapresentation svg
+        {
+            width: 60%;
+            height: 60%;
+            margin-bottom: -50px;
+        }
+
+        #coreapresentation div
+        {
+            margin-top: -30px;
+        }
+        
+
+
+
+}
