@@ -334,7 +334,8 @@ ion-icon[name="arrow-dropup-circle"]
 
 .field
 {
-    
+    width: 90%;
+    margin: 0 10px 0 10px;
 }
 
 
@@ -342,6 +343,7 @@ ion-icon[name="arrow-dropup-circle"]
 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     
 }
@@ -385,8 +387,16 @@ ion-icon[name="arrow-dropup-circle"]
 }
 
 
+ion-icon[name="arrow-dropdown"]
+{
+    display: none;
+}
+
+
 @media only screen and (max-width: 600px)
 {
+
+
 
 #about
 {
@@ -446,6 +456,22 @@ h1
    height: 100%;
    width: 100%;
 }
+
+
+ion-icon[name="arrow-dropdown"]
+{
+    display: block;
+}
+
+#skill
+{
+    flex-direction: column;
+    width: 90%;
+}
+
+
+
+
 }
 
 @media only screen and (max-width: 500px)
