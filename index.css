@@ -6,6 +6,10 @@
     --purcolor: rgb(189, 21, 189);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /**/
 
 
@@ -26,11 +30,13 @@ body
 
 
 
-ion-icon
+ion-icon, i
 {
     color: var(--redtextcolor);
     
 }
+
+
 
 ion-icon:hover
 {
@@ -346,6 +352,14 @@ ion-icon[name="arrow-dropup-circle"]
     justify-content: center;
     align-items: center;
     
+    
+    
+}
+
+.fieldheader i
+{
+    font-size: 20px;
+    margin-right: 7px;
 }
 
 
@@ -395,6 +409,7 @@ ion-icon[name="arrow-dropdown"]
 
 @media only screen and (max-width: 600px)
 {
+
 
 
 
@@ -465,9 +480,102 @@ ion-icon[name="arrow-dropdown"]
 
 #skill
 {
+    display: flex;
     flex-direction: column;
     width: 90%;
 }
+
+
+
+
+.skills
+{
+    display: none;
+}
+
+
+.skills.on
+{
+    animation: fadein 1000ms linear;
+    display: block;
+}
+
+.skills.off
+{
+    animation: fadein reverse 1000ms linear;
+    
+    
+}
+
+.field
+{
+    width: 100%;
+}    
+
+.fieldheader
+{
+    --btb: 1px solid var(--seconddark);
+    border-top: var(--btb);
+    border-bottom: var(--btb);
+    
+   
+    
+}
+
+
+
+/*
+  
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center
+*/
+
+@keyframes fadein{
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeout{
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        display: block;
+    }
+    80% {
+        transform: translateY(80px);
+        opacity: 1;
+        display: block;
+    }
+    100% {
+        transform: translateY(200px);
+        opacity: 1;
+        display: none;
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
 
 
 
@@ -490,6 +598,24 @@ ion-icon[name="arrow-dropdown"]
         }
         
 
+        
+       
 
 
 }
+
+
+
+@media only screen and (max-width: 400px)
+{
+
+    .fieldheader
+    {
+        justify-content: start;
+
+        
+    }
+
+
+}
+
