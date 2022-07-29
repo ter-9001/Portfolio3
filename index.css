@@ -143,13 +143,22 @@ section
     width: 90%; height: 100%;
 }
 
+#blob
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+ 
+}
 
-#coreapresentation svg
+#blob svg
 {
    z-index: 2000;
    fill: var(--redtextcolor);
-   height: 50%;
-   width: 50%;
+   height: 80%;
+   width: 80%;
 }
 
 
@@ -206,6 +215,10 @@ ion-icon[name="arrow-dropup-circle"]
     top: 90%; right: 10%;
 }
 
+#sabout
+{
+    margin-bottom: 50px;
+}
 
 #sabout h1
 {
@@ -259,7 +272,7 @@ ion-icon[name="arrow-dropup-circle"]
     width: auto;
     flex-direction: row;
     justify-content: end;
-    align-items: flex-start;
+    align-items: start;
 }
 
 #quali div
@@ -304,6 +317,23 @@ ion-icon[name="arrow-dropup-circle"]
 @media only screen and (max-width: 600px)
 {
 
+#about
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} 
+
+#aboutme
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
 p, span
 {
     font-size: 13px;
@@ -314,11 +344,7 @@ h1
     font-size: 20px;
 }
     
-#apresentation
-{
-transition: 1.5s;
-transform: scale(1);
-}
+
 
     p, h1, span, ion-icon, svg, a
     {
@@ -331,15 +357,24 @@ transform: scale(1);
     #apresentation
     {
         top:0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
     }
     
     
     #coreapresentation
     {
         flex-direction: column;
+        height: 80%;
     }
+
+#blob svg
+{
+   z-index: 2000;
+   fill: var(--redtextcolor);
+   height: 100%;
+   width: 100%;
+}
 }
 
 @media only screen and (max-width: 500px)
@@ -350,12 +385,7 @@ transform: scale(1);
             justify-content: center;
         }
 
-        #coreapresentation svg
-        {
-            width: 60%;
-            height: 60%;
-            margin-bottom: -50px;
-        }
+        
 
         #coreapresentation div
         {
