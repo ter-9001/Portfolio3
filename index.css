@@ -21,7 +21,7 @@ body
 #apresentation
 {
     transition: 1.5s;
-    transform: scale(0.8);
+    transform: scale(0.9);
 }
 
 
@@ -41,24 +41,29 @@ ion-icon:hover
 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
 
 }
 
+section
+{
+    
+}
 
 #apresentation
 {
-    display: flex;
+    display: block;
     flex-direction: column;
-    position: absolute;
-    top: 10%;
-    width: 80%;
-    height: 80%;
-    background-color: var(--seconddark);
     border-radius: 20px;
     border: none;
+    margin-bottom: 5vh;
+    width: 95%;
+    height: 95vh;
+    background-color: var(--seconddark);
     box-shadow: 1px 0.2px 2px 2px rgba(255, 40, 201, 0.479);
-    
+    border-radius: 20px;
+    border: none;
     
 }
 
@@ -73,7 +78,7 @@ ion-icon:hover
     display: flex;
     justify-content: end;
     flex-direction: row;
-    padding: 10px 0 10px 0;
+    padding: 20px 10px 10px 0;
 }
 
 #apresentation nav a
@@ -199,6 +204,98 @@ ion-icon[name="arrow-dropup-circle"]
     z-index: 2000;
     position: fixed;
     top: 90%; right: 10%;
+}
+
+
+#sabout h1
+{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+#about
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#imgabout, #aboutme
+{
+    
+}
+
+#imgabout
+{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#imgabout svg
+{
+    margin: 0;
+   
+}
+
+
+#aboutme
+{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
+#quali
+{
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+#quali div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15px 0 5px;
+    
+    
+    
+}
+
+#quali div p
+{
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 0;
+    
+
+}
+
+#quali div span
+{
+    color: var(--redtextcolor);
+    font-size: 12px;
+    font-weight: bolder;
+    
+}
+
+
+#aboutme p
+{
+    color: grey;
 }
 
 
