@@ -253,13 +253,42 @@ ion-icon[name="arrow-dropup-circle"]
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
+/* transform: dance 300ms linear; */
 
 #imgabout svg
 {
     margin: 0;
+    animation: dance 3.5s ease-in-out infinite;
+    
+    
+
    
+}
+
+@keyframes dance {
+   0%
+   {
+    transform: perspective(400px) rotateY(0deg) rotateX(30deg);
+   }
+   25%
+   {
+    transform: perspective(200px) rotateY(-30deg) rotateX(0deg);
+   }
+   50%
+   {
+    transform: perspective(400px) rotateY(30deg) rotateX(-30deg);
+   }
+   75%
+   {
+    transform: perspective(300px) rotateY(0deg) rotateX(30deg);
+   }
+
+
+    
+    
 }
 
 
@@ -451,18 +480,21 @@ ion-icon[name="arrow-dropdown"]
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: end;
 }
 
 .academy.line1
 {
     width: 80%;
+    align-items: end;
+
 }
 
 
 .academy.line2
 {
     width: 50%;
+    align-items: start;
+
 
 }
 
@@ -517,13 +549,14 @@ ion-icon[name="arrow-dropdown"]
     height: 3px;
     background-color: grey;
     margin: 0;
+    border-radius: 10px;
     
 }
 
 #timeline   .fa-solid.fa-circle
 {
     position:relative;
-    margin-top: -5px;
+    margin-top: -7px;
 }
 
 #sprojects
@@ -769,7 +802,7 @@ ion-icon[name="arrow-dropdown"]
 
 #timeline
 {
-    width: 100%;
+    width: 80%;
     display: flex;
     padding: 10px;
     transform: rotate(90deg);
