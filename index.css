@@ -407,6 +407,78 @@ ion-icon[name="arrow-dropdown"]
 }
 
 
+#sacademy
+{
+    margin-top: 50px;
+}
+
+#sacademy h1
+{
+    text-align: center;
+}
+
+.academy
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stage 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 20%;
+}
+
+
+.stage p
+{
+    font-size: 15px;
+    margin: 0; padding: 0;
+}
+
+
+.stage span
+{
+    margin-bottom: 10px;
+}
+
+
+.date
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.stage span, .date span
+{
+    color: grey;
+    font-size: 12px;
+}
+
+#timeline
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#timeline span
+{
+    width: 80%;
+    height: 3px;
+    background-color: grey;
+}
+
+
+
 @media only screen and (max-width: 600px)
 {
 
