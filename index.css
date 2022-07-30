@@ -410,19 +410,46 @@ ion-icon[name="arrow-dropdown"]
 #sacademy
 {
     margin-top: 50px;
+    width: 100%;
+    
+    
 }
 
 #sacademy h1
 {
     text-align: center;
+    margin-bottom: 100px;
+}
+
+#allacademy
+{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 
 .academy
 {
-    margin-top: 30px;
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: end;
+}
+
+.academy.line1
+{
+    width: 80%;
+}
+
+
+.academy.line2
+{
+    width: 50%;
+
 }
 
 .stage 
@@ -432,6 +459,7 @@ ion-icon[name="arrow-dropdown"]
     align-items: start;
     justify-content: start;
     width: 20%;
+    margin-right: 20px;
 }
 
 
@@ -466,7 +494,6 @@ ion-icon[name="arrow-dropdown"]
 {
     width: 100%;
     display: flex;
-    justify-content: center;
     padding: 10px;
 }
 
@@ -475,6 +502,14 @@ ion-icon[name="arrow-dropdown"]
     width: 80%;
     height: 3px;
     background-color: grey;
+    margin: 0;
+    
+}
+
+#timeline   .fa-solid.fa-circle
+{
+    position:relative;
+    margin-top: -5px;
 }
 
 
@@ -593,6 +628,64 @@ ion-icon[name="arrow-dropdown"]
    
     
 }
+
+#sacademy h1
+{
+    margin-bottom: 40px;
+}
+
+
+#allacademy
+{
+    flex-direction: row;
+}
+
+.academy
+{
+    flex-direction: column;
+}
+
+
+
+.academy.line1
+{
+    height: 80%;
+    width: 0;
+}
+
+
+.academy.line2
+{
+    height: 50%;
+
+}
+
+
+#timeline
+{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    transform: rotate(90deg);
+    position: absolute;
+
+
+}
+
+#timeline span
+{
+    width: calc(100% + 80px);
+    height: 3px;
+    background-color: grey;
+    margin: 0 -100px;
+}
+
+#timeline   .fa-solid.fa-circle
+{
+    position:relative;
+    margin-top: -5px;
+}
+
 
 
 
