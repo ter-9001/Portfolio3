@@ -22,6 +22,12 @@ body
 }
 
 
+#upbutton
+{
+    display: none;
+}
+
+
 #apresentation
 {
     transition: 1.5s;
@@ -283,7 +289,11 @@ ion-icon[name="arrow-dropup-circle"]
    }
    75%
    {
-    transform: perspective(300px) rotateY(0deg) rotateX(30deg);
+    transform: perspective(300px) rotateY(0deg) rotateX(0deg);
+   }
+   100%
+   {
+    transform: perspective(400px) rotateY(0deg) rotateX(30deg);
    }
 
 
@@ -653,6 +663,12 @@ ion-icon[name="arrow-dropdown"]
 }
 
 
+#asmenutiny
+{
+    display: none;
+}
+
+
 @media only screen and (max-width: 600px)
 {
 
@@ -732,8 +748,6 @@ ion-icon[name="arrow-dropdown"]
 }
 
 
-
-
 .skills
 {
     display: none;
@@ -796,8 +810,9 @@ ion-icon[name="arrow-dropdown"]
 .academy.line2
 {
     height: 50%;
-
+    align-items: end;
 }
+
 
 
 #timeline
@@ -917,6 +932,22 @@ ion-icon[name="arrow-dropdown"]
             margin-top: -30px;
         }
 
+        #apresentation
+        {
+            transition: 1s;
+            transform: scale(1);
+        }
+
+
+
+        #apresentation
+        {
+            width:100%;
+            padding: 0;
+            margin: 0;
+            border: none;
+            box-shadow: none;
+        }
 
         
         
@@ -944,8 +975,45 @@ ion-icon[name="arrow-dropdown"]
     {
             grid-template-columns: 1fr;
             width: 100%;
+            margin-bottom: 55px;
 
     }
+
+    #asmenutiny
+    {
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        background-color: var(--seconddark);
+        height: 50px; width: 100%;
+    }
+
+    #menutiny
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        
+    }
+
+    #menutiny ion-icon, #menutiny span
+    {
+        font-size: 25px;
+        border-radius: 10px;
+        border: solid 1px var(--firtdark);
+        padding: 12.5px;
+    }
+
+    #menutiny span
+    {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+
 
 
 }
