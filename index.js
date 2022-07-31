@@ -139,9 +139,10 @@ function myFunction() {
       else
       {
 
-        nav.style.display = 'none';
+        nav.style.display = 'flex';
         asmenutiny.style.display = 'none';
-        gridmenu.style.display = 'none';
+        gridmenu.classList.add('off');
+        gridmenu.classList.remove('on');
 
 
 
@@ -160,6 +161,7 @@ function myFunction() {
 }
 
 var sh_gridmenu = 0;
+
 function showgridmenu()
 {
     let gridmenu = document.getElementById('hgridmenu');
@@ -179,13 +181,13 @@ function showgridmenu()
 }
 
 document.getElementById('gridmenu').onclick = () =>
-        {
-            let gridmenu = document.getElementById('hgridmenu');
-        
-        
-            gridmenu.classList.add('off');
-            gridmenu.classList.remove('on');
-        
-        }
- 
+{
+    let gridmenu = document.getElementById('hgridmenu');
+
+
+    gridmenu.classList.add('off');
+    gridmenu.classList.remove('on');
+
+}
+
 

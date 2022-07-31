@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/4372633949.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./mypic.png" />
     
 </head>
 <body>
@@ -33,13 +34,16 @@
 
                         <ul>
                             <li>
-                                <ion-icon name="logo-whatsapp"></ion-icon>
+                                <ion-icon name="logo-whatsapp"
+                                onclick="window.open('https://api.whatsapp.com/send?phone=5548984274899', '_blank');"
+                                ></ion-icon>
                             </li>
                             <li>
-                                <ion-icon name="logo-linkedin"></ion-icon>
+                                <ion-icon onclick="window.open('https://www.linkedin.com/in/gabriel-martins-089678185/', '_blank');"name="logo-linkedin"></ion-icon>
                             </li>
                             <li>
-                                <ion-icon name="logo-github"></ion-icon>
+                                <ion-icon
+                                onclick="window.open('https://github.com/ter-9001', '_blank');" name="logo-github"></ion-icon>
                             </li>
                         </ul>
 
@@ -71,7 +75,7 @@
                         </div>
 
 
-                        <div>
+                        <div id="myname">
 
                             <h1>
                                 Hi, I'm Gabriel Martins
@@ -85,6 +89,13 @@
                             <p>
                                 A passionate about web development, web designer and technology. Who wants always learn new things and thinks about the new project.
                             </p>
+
+                            <div id="btncode">
+
+                                <ion-icon name="code-working"></ion-icon>
+                                <p> See the code! </p> 
+
+                            </div>
 
 
 
@@ -127,12 +138,12 @@
                             </div>
                             
                             <div>
-                                <p> 7+ </p>
+                                <p> 30+ </p>
                                 <span> Projects </span>
                             </div>
                             
                             <div>
-                                <p> 7+ </p>
+                                <p> 10+ </p>
                                 <span> Certificates </span>
                             </div>
                             
@@ -447,33 +458,256 @@
 
             <div id="projects">
 
-                <div class="project">
-                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9cc76151-95e3-4c69-b7db-f48f73ea854f/da86jda-8dac0c26-fc87-4f07-9dd4-b10efb097776.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzljYzc2MTUxLTk1ZTMtNGM2OS1iN2RiLWY0OGY3M2VhODU0ZlwvZGE4NmpkYS04ZGFjMGMyNi1mYzg3LTRmMDctOWRkNC1iMTBlZmIwOTc3NzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.k4jCx0z9BaZRLQ82G7IUrS3qXD1L7utHsGn0hcIncyE" >
+                
+                    <div class="project">
+                        <img src="./adv.png" >
+    
+                        <h2>
+                             Law's Web-site
+                        </h2>
+    
+                        <span>
+                            PHP, Mysql, HTML, CSS, Javascript, Jquey
+                        </span>
+    
+                        <p>
+                            Responsive Law Office website, with chat to send message.
+                        </p>
+    
+                        <div class="aboutproject">
+    
+                            <div onclick="window.open('http://martinsadvogado.000webhostapp.com', '_blank');">
+                                <ion-icon name="eye"></ion-icon>
+                                <span> View </span>
+                            </div>
 
-                    <h2>
-                         Test 1
-                    </h2>
+                            <div onclick="alert('not permit');">
+                                <ion-icon name="logo-github"></ion-icon>
+                                <span> Github  </span>
+                            </div>
+    
+    
+                        </div>
+    
+                    </div>
+                    
+                    
+                   
+                    <div class="project">
+                        <img src="./sharelinks.png" >
+    
+                        <h2>
+                             Sharelinks
+                        </h2>
+    
+                        <span>
+                            PHP, Mysql, HTML, CSS, Javascript, Jquey
+                        </span>
+    
+                        <p>
+                            Social Midia, where you can share links.
+                        </p>
+    
+                        <div class="aboutproject">
+    
+                            <div onclick="window.open('https://sharelinks2340.000webhostapp.com/', '_blank');">
+                                <ion-icon name="eye"></ion-icon>
+                                <span> View </span>
+                            </div>
 
-                    <span>
-                         bebe é fofo, mas não deixa eu amassa muito. Mas sempre digo que fofura deve ser amassada.
-                    </span>
-
-                    <p>
-                        bebe é fofo, mas não deixa eu amassa muito. Mas sempre digo que fofura deve ser amassada.
-                    </p>
-
-                    <div class="aboutproject">
-
-                        <ion-icon name="eye"></ion-icon>
-                        <ion-icon name="logo-github"></ion-icon>
+                            <div onclick="window.open('https://github.com/ter-9001/sharelinks/', '_blank');">
+                                <ion-icon name="logo-github"></ion-icon>
+                                <span> Github  </span>
+                            </div>
+    
+    
+                        </div>
+    
                     </div>
 
-                </div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
+                    <div class="project">
+                        <img src="./netflicks.png" >
+    
+                        <h2>
+                             Netflicks
+                        </h2>
+    
+                        <span>
+                            HTML, CSS, Javascript, Jquey
+                        </span>
+    
+                        <p>
+                            Imatation of home's Netflicks screen.
+                        </p>
+    
+                        <div class="aboutproject">
+    
+                            <div>
+                                <ion-icon name="eye"  onclick="window.open('http://gabrielmartinsportfolio.000webhostapp.com/netflicks/index.html', '_blank')"; ></ion-icon>
+                                <span> View </span>
+                            </div>
+    
+                            <div>
+                                <ion-icon name="logo-github" onclick="window.open('https://github.com/ter-9001/Netflick', '_blank');"></ion-icon>
+                                <span> Github  </span>
+                            </div>
+    
+    
+                        </div>
+    
+                    </div>
+
+                    <div class="project">
+                        <img src="./ecommerce.png" >
+    
+                        <h2>
+                             Ecommerce
+                        </h2>
+    
+                        <span>
+                            React, HTML, CSS, Javascript, Jquey
+                        </span>
+    
+                        <p>
+                            Simulation of a Ecommerce page, with filter by price, score and letter.
+                            Made with React.
+                        </p>
+    
+                        <div class="aboutproject">
+    
+                            <div>
+                                <ion-icon name="eye" onclick="alert('Not Avaliable!')"></ion-icon>
+                                <span> View </span>
+                            </div>
+    
+                            <div>
+                                <ion-icon name="logo-github" onclick="window.open('https://github.com/ter-9001/ecommercegames', '_blank');"></ion-icon>
+                                <span> Github  </span>
+                            </div>
+    
+    
+                        </div>
+    
+                    </div>
+
+                    <div class="project">
+                        <img src="./insta.png" >
+    
+                        <h2>
+                             Instagram Login
+                        </h2>
+    
+                        <span>
+                            HTML, CSS, Javascript, Jquey
+                        </span>
+    
+                        <p>
+                           Imitation of Instagram's login.
+                        </p>
+    
+                        <div class="aboutproject">
+    
+                            <div>
+                                <ion-icon name="eye" onclick="window.open('https://gabrielmartinsportfolio.000webhostapp.com/instagram/login.html','_blank')"></ion-icon>
+                                <span> View </span>
+                            </div>
+    
+                            <div>
+                                <ion-icon name="logo-github" onclick="window.open('https://github.com/ter-9001/Instagram_Copy/', '_blank');"></ion-icon>
+                                <span> Github  </span>
+                            </div>
+    
+    
+                        </div>
+    
+                    </div>
+
+                    <div class="project">
+                        <img src="./naves.png" >
+    
+                        <h2>
+                             Naves
+                        </h2>
+    
+                        <span>
+                            HTML, CSS, Javascript, Jquey
+                        </span>
+    
+                        <p>
+                           Game to save the soldier and fight against the enimy arms!.
+                           Made on Javascript.
+                        </p>
+    
+                        <div class="aboutproject">
+    
+                            <div>
+                                <ion-icon name="eye" onclick="window.open('https://gabrielmartinsportfolio.000webhostapp.com/naves/index.html','_blank')"></ion-icon>
+                                <span> View </span>
+                            </div>
+    
+                            <div>
+                                <ion-icon name="logo-github" onclick="window.open('https://github.com/ter-9001/Jogo-de-Naves', '_blank');"></ion-icon>
+                                <span> Github  </span>
+                            </div>
+    
+    
+                        </div>
+    
+                    </div>
+
+
+                    <div class="project">
+                        <img src="./ss.png" >
+    
+                        <h2>
+                             Pra girar tem que ganhar
+                        </h2>
+    
+                        <span>
+                            React HTML, CSS, Javascript, Jquey
+                        </span>
+    
+                        <p>
+                           Imitation of the Game 'Pra Girar Tem Que Ganhar' from Silvio Santos.
+                           Made on Node.
+                        </p>
+    
+                        <div class="aboutproject">
+    
+                            <div>
+                                <ion-icon name="eye" onclick="alert('Not Avaliable!')"></ion-icon>
+                                <span> View </span>
+                            </div>
+    
+                            <div>
+                                <ion-icon name="logo-github" onclick="window.open('https://github.com/ter-9001/Roleta-do-Silvio-Santos', '_blank');"></ion-icon>
+                                <span> Github  </span>
+                            </div>
+    
+    
+                        </div>
+    
+                    </div>
+
+
+
+                    <div class="project">
+                        <img src="./exclamation.png" >
+    
+                        <h2>
+                             New Project
+                        </h2>
+    
+                        <span>
+                            HTML, CSS, Javascript, Jquey
+                        </span>
+    
+                        <p>
+                           A new project is coming.
+                        </p>
+    
+                        
+                    </div>
 
             </div>
         </section>
@@ -516,9 +750,9 @@
                 <ion-icon name="desktop"></ion-icon>
                 <span> Projects </span>
             </a>
-            <a href="">
+            <a href="" onclick="alert('Function still being develop')">
                 <ion-icon name="send"></ion-icon>
-                <span> Contact me </span>
+                <span> Contact</span>
             </a>
         </div>
     </header>

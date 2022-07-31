@@ -153,6 +153,8 @@ section
     justify-content: center;
     align-items: center;
     width: 90%; height: 100%;
+    margin: 0 0 0 50px;
+
 }
 
 #blob
@@ -180,7 +182,7 @@ section
 }
 
 
-#coreapresentation div
+#myname
 {
     display: flex;
     flex-direction: column; 
@@ -188,14 +190,15 @@ section
     margin: 0 0 0 50px;
 }
 
-#coreapresentation div p
+
+#myname p
 {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 
-#coreapresentation div span
+#myname span
 {
     margin-top: -10px;
     font-weight: 600;
@@ -203,10 +206,37 @@ section
 }
 
 
-#coreapresentation div h
+#myname h
 {
     text-align: justify;
     margin: 0;
+}
+
+#btncode
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: var(--redtextcolor);
+    width: 50%;
+}
+
+#btncode ion-icon 
+{
+    font-size: 30px;
+    color: aliceblue;
+    padding: 0; margin:0;
+    margin-right: 2px;
+}
+
+#btncode p
+{
+    padding: 0; margin:0;
+
 }
 
 p, span
@@ -281,7 +311,7 @@ ion-icon[name="arrow-dropup-circle"]
    }
    25%
    {
-    transform: perspective(200px) rotateY(-30deg) rotateX(0deg);
+    transform: perspective(300px) rotateY(-30deg) rotateX(0deg);
    }
    50%
    {
@@ -598,7 +628,7 @@ ion-icon[name="arrow-dropdown"]
     
     padding-bottom: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
@@ -662,6 +692,20 @@ ion-icon[name="arrow-dropdown"]
 
 }
 
+.aboutproject div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+}
+
+
+.aboutproject div span
+{
+  margin-top: 2px;   
+}
+
 
 #asmenutiny
 {
@@ -673,11 +717,18 @@ ion-icon[name="arrow-dropdown"]
     display: none;
 }
 
+@media only screen and (max-width: 800px)
+{
+    #btncode
+    {
+        width: 60%;
+    }
+}
 
 @media only screen and (max-width: 600px)
 {
 
-
+    
 
 
 #about
@@ -755,7 +806,7 @@ ion-icon[name="arrow-dropdown"]
 
 .skills
 {
-    display: none;
+    display:none;
 }
 
 
@@ -768,7 +819,6 @@ ion-icon[name="arrow-dropdown"]
 .skills.off
 {
     animation: fadein reverse 1000ms linear;
-    
     
 }
 
@@ -873,35 +923,21 @@ ion-icon[name="arrow-dropdown"]
     0% {
         transform: translateY(-200px);
         opacity: 0;
+        
+        
     }
     80% {
         transform: translateY(-80px);
         opacity: 0;
+        
     }
     100% {
         transform: translateY(0);
         opacity: 1;
+        
     }
 }
 
-
-@keyframes fadeout{
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-        display: block;
-    }
-    80% {
-        transform: translateY(80px);
-        opacity: 1;
-        display: block;
-    }
-    100% {
-        transform: translateY(200px);
-        opacity: 1;
-        display: none;
-    }
-}
 
 @keyframes growDown {
     0% {
@@ -924,7 +960,8 @@ ion-icon[name="arrow-dropdown"]
 @media only screen and (max-width: 500px)
 {
 
-    
+
+
         #apresentation nav
         {
             justify-content: center;
@@ -933,7 +970,7 @@ ion-icon[name="arrow-dropdown"]
 
         
 
-        #coreapresentation div
+        #myname
         {
             margin-top: -30px;
         }
@@ -968,6 +1005,11 @@ ion-icon[name="arrow-dropdown"]
 
 @media only screen and (max-width: 400px)
 {
+    #btncode
+    {
+        width: 100%;
+    }
+
 
     .fieldheader
     {
@@ -1011,6 +1053,7 @@ ion-icon[name="arrow-dropdown"]
         font-size: 17px;
         border-radius: 10px;
         border: solid 1px var(--firtdark);
+        border-top: none;
         padding: 12.5px;
     }
 
@@ -1022,7 +1065,6 @@ ion-icon[name="arrow-dropdown"]
 
     #hgridmenu
     {
-        display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -1037,9 +1079,10 @@ ion-icon[name="arrow-dropdown"]
         align-items: center;
         -ms-grid-column-align: center;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
         width: 100%;
+        height: auto;
         background-color: var(--firtdark);
         padding: 30px;
         margin-bottom: 40px;
@@ -1047,9 +1090,9 @@ ion-icon[name="arrow-dropdown"]
         
     }
 
-    #gridmenu ion-icon
+    #gridmenu
     {
-        font-size: 30px;
+        font-size: 17px;
     }
 
     #gridmenu a
@@ -1062,14 +1105,17 @@ ion-icon[name="arrow-dropdown"]
         text-decoration: none;
     }
 
+
     #hgridmenu.on
     {
-        animation: showmenugrid 1s linear forwards;
+        animation: showmenugrid 1000ms linear forwards;
+        display: flex;
     }
 
     #hgridmenu.off
     {
-        animation: showmenugrid reverse 1s ease-in-out forwards;
+        animation: showmenugrid reverse 1000ms linear forwards;
+        display: none;
     }
 
     /*
@@ -1092,8 +1138,9 @@ ion-icon[name="arrow-dropdown"]
         {
             opacity: 1;
             position: fixed;
-            bottom: 0;
+            bottom: 0; right: 0; left: 0;
             transform: translateY(0);
+            
         }
         
     }
