@@ -99,20 +99,24 @@ function changeScreen()
     window.onscroll = function() {myFunction()};
 
 function myFunction() {
-  
+    
+    let nav = document.getElementById('apresentation').querySelector('nav');
+
+    let asmenutiny = document.getElementById('asmenutiny');
+    let button = document.getElementById('upbutton') ;
+    let gridmenu = document.getElementById('hgridmenu');
+
       if(mobile)
       {
-        let nav = document.getElementById('apresentation').querySelector('nav');
 
-        let asmenutiny = document.getElementById('asmenutiny');
-
+        button.style.display = 'none';
 
 
                 if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
                 {
 
 
-                    nav.display  = 'none';
+                    nav.style.display  = 'none';
                     asmenutiny.style.display  = 'flex';
 
                 
@@ -136,7 +140,12 @@ function myFunction() {
       else
       {
 
-        let button = document.getElementById('upbutton') ;
+        nav.style.display = 'none';
+        asmenutiny.style.display = 'none';
+        gridmenu.style.display = 'none';
+
+
+
                 if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) 
                 {
 
@@ -150,3 +159,34 @@ function myFunction() {
                 }
       }
 }
+
+var sh_gridmenu = 0;
+function showgridmenu()
+{
+    let gridmenu = document.getElementById('hgridmenu');
+
+    sh_gridmenu++;
+
+    if(sh_gridmenu%2)
+    {   
+        gridmenu.classList.add('on');
+        gridmenu.classList.remove('off');
+    }
+    else
+    {  
+        gridmenu.classList.add('off');
+        gridmenu.classList.remove('on');
+    }      
+}
+
+document.getElementById('gridmenu').onclick = () =>
+        {
+            let gridmenu = document.getElementById('hgridmenu');
+        
+        
+            gridmenu.classList.add('off');
+            gridmenu.classList.remove('on');
+        
+        }
+ 
+

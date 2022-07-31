@@ -370,7 +370,7 @@ ion-icon[name="arrow-dropup-circle"]
 
 #sskill h1
 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -668,6 +668,11 @@ ion-icon[name="arrow-dropdown"]
     display: none;
 }
 
+#hgridmenu
+{
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px)
 {
@@ -923,6 +928,7 @@ ion-icon[name="arrow-dropdown"]
         #apresentation nav
         {
             justify-content: center;
+            font-size: 10px;
         }
 
         
@@ -975,7 +981,7 @@ ion-icon[name="arrow-dropdown"]
     {
             grid-template-columns: 1fr;
             width: 100%;
-            margin-bottom: 55px;
+            
 
     }
 
@@ -1011,6 +1017,84 @@ ion-icon[name="arrow-dropdown"]
     {
         font-size: 18px;
         padding: 8px;
+    }
+
+    #hgridmenu
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        opacity: 0;
+    }
+
+
+    #gridmenu
+    {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        -ms-grid-column-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        width: 100%;
+        background-color: var(--firtdark);
+        padding: 30px;
+        margin-bottom: 40px;
+        
+        
+    }
+
+    #gridmenu ion-icon
+    {
+        font-size: 30px;
+    }
+
+    #gridmenu a
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    #hgridmenu.on
+    {
+        animation: showmenugrid 1s linear forwards;
+    }
+
+    #hgridmenu.off
+    {
+        animation: showmenugrid reverse 1s ease-in-out forwards;
+    }
+
+    /*
+    
+        position: fixed;
+        bottom: 0;
+        opacity: 1;
+    */
+
+
+
+    @keyframes showmenugrid {
+
+        0%
+        {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        100%
+        {
+            opacity: 1;
+            position: fixed;
+            bottom: 0;
+            transform: translateY(0);
+        }
+        
     }
 
 
