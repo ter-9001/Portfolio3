@@ -990,10 +990,10 @@ ion-icon[name="arrow-dropdown"]
         justify-content: center;
         align-items: center;
         position: fixed;
-        bottom: 0;
+        bottom: 0; right: 0; left: 0;
         z-index: 2;
         background-color: var(--seconddark);
-        height: 50px; width: 100%;
+        height: 30px; width: 100%;
     }
 
     #menutiny
@@ -1001,13 +1001,14 @@ ion-icon[name="arrow-dropdown"]
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 80%;
+        align-items: center;
+        width: 100%;
         
     }
 
     #menutiny ion-icon, #menutiny span
     {
-        font-size: 25px;
+        font-size: 17px;
         border-radius: 10px;
         border: solid 1px var(--firtdark);
         padding: 12.5px;
@@ -1015,8 +1016,8 @@ ion-icon[name="arrow-dropdown"]
 
     #menutiny span
     {
-        font-size: 18px;
-        padding: 8px;
+        font-size: 13px;
+        padding: 13.5px;
     }
 
     #hgridmenu

@@ -134,7 +134,6 @@ function myFunction() {
                     
                 }
 
-                console.log(asmenutiny.style.display);
                 
       }
       else
