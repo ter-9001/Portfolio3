@@ -1054,6 +1054,9 @@ ion-icon[name="arrow-dropdown"]
         border-radius: 10px;
         border: solid 1px var(--firtdark);
         border-top: none;
+        border-top-left-radius: none;
+        border-top-left-radius: none;
+
         padding: 12.5px;
     }
 
